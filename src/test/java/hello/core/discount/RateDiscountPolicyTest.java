@@ -25,7 +25,7 @@ class RateDiscountPolicyTest {
     }
 
     @Test
-    @DisplayName("VIP가 아니면 할인이 적용되지 않아야 한다.")
+    @DisplayName("VIP가 아니면 할인이 적용되지 않아야 한다.") //실패테스트
     void vip_x() {
         Member member = new Member(1l,"memberVIP", Grade.VIP);
         //when

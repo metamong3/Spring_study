@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 public class MemberServiceTest {
 
     MemberService memberService;
-    @BeforeEach
+    @BeforeEach // 각 테스트 실행전에 무조건 실행되는 것
     public void beforEach(){
         AppConfig appConfig = new AppConfig();
         memberService = appConfig.memberService();
